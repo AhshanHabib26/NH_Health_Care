@@ -65,6 +65,7 @@
     font-size: 16px;
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 .unSeelct_btn p{
     background-color: #0477fa;
@@ -72,6 +73,7 @@
     font-size: 16px;
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 

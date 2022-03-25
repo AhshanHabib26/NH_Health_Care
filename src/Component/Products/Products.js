@@ -7,7 +7,6 @@ const Products = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
    
-
     const cartHandeler = (product) =>{
             const newCart = [...cart, product]
             setCart(newCart)
@@ -54,10 +53,8 @@ const Products = () => {
            <div className="products_summery">
                <div className='sticky'>
                <h2>Your Selected Items</h2>
-              
-              {
-                  
-                 cart.map((item) =>  (
+              {  
+                 cart.map((item) =>   (
                     <div className="product_cart">
                         <div>
                         <img src={item.img} alt="" />
@@ -65,6 +62,7 @@ const Products = () => {
                         <div className='cart_product_info'>
                             <p>{item.name}</p>
                             <h3>Price: {item.price}</h3>
+
                         </div>
 
                     </div>
