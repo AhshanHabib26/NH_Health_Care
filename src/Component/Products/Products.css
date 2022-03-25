@@ -50,3 +50,22 @@
     justify-items: center;
     height: 100vh;
 }
+.cart_button{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.select_btn p{
+    background-color: #ff6347;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+.unSeelct_btn p{
+    background-color: #0477fa;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}

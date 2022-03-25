@@ -6,15 +6,28 @@ const Products = () => {
 
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
+   
 
     const cartHandeler = (product) =>{
-
-        if(!product){
-            return
-        }else{
             const newCart = [...cart, product]
             setCart(newCart)
+    }
+
+    const getRandomProducts = (product) =>{
+        if(cart.length === 0){
+            return
+        }else{
+             cartHandeler(cart[Math.floor(Math.random() * cart.length)])
+        }  
+    }
+
+    const selectAgainProducts = () =>{
+        if(cart.length === 0){
+            return
+        }else{
+            setCart([])
         }
+      
     }
 
     useEffect( () =>{
@@ -40,10 +53,9 @@ const Products = () => {
            <div className="products_summery">
                <div className='sticky'>
                <h2>Your Selected Items</h2>
-
-           
-
+              
               {
+                  
                  cart.map((item) =>  (
                     <div className="product_cart">
                         <div>
@@ -53,11 +65,22 @@ const Products = () => {
                             <p>{item.name}</p>
                             <h3>Price: {item.price}</h3>
                         </div>
-                         
+
                     </div>
                  )) 
               }
+                    <div className="cart_button">
+                        <div onClick={getRandomProducts} className="select_btn">
+                            <p>Select <span>1</span> For Me</p>
+                        </div>
+                        <div onClick={selectAgainProducts} className="unSeelct_btn">
+                            <p>Select Again</p>
+                        </div>
+                    </div>
                </div>
+
+
+
            </div>
            </div>
         </div>
