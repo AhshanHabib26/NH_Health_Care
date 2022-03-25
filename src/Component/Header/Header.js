@@ -11,6 +11,7 @@ const Header = () => {
                 </div>
                 <div className="menu_item">
                     <BsCart4/>
+                    <span>0</span>
                 </div>
             </nav>
 
