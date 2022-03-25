@@ -13,11 +13,12 @@ const Products = () => {
             setCart(newCart)
     }
 
-    const getRandomProducts = (product) =>{
+    const getRandomProducts = () =>{
         if(cart.length === 0){
             return
         }else{
-             cartHandeler(cart[Math.floor(Math.random() * cart.length)])
+             cartHandeler(cart[Math.round(Math.random() * cart.length)])
+             
         }  
     }
 
