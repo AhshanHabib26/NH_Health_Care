@@ -1,5 +1,5 @@
 .product_img img{
-    width: 350px;
+    width: 250px;
     clip-path: polygon(0 0, 75% 0, 100% 23%, 100% 70%, 100% 100%, 24% 100%, 0 76%, 0% 30%);
     -webkit-clip-path: polygon(0 0, 75% 0, 100% 23%, 100% 70%, 100% 100%, 24% 100%, 0 76%, 0% 30%);
     transition: 0.5s ease-in-out;
