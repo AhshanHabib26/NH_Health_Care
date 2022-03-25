@@ -1,0 +1,21 @@
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.site_name h3{
+    font-size: 28px;
+    color: #363636;
+}
+.site_name span{
+    color: #ff6347;
+}
+.menu_item{
+    font-size: 28px;
+    color: #363636;
+}
+.header_info h3{
+    font-size: 28px;
+    color: #363636;
+}
