@@ -1,0 +1,14 @@
+.footer_container {
+    text-align: center;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+}
+.footer_container a{
+    text-decoration: none;
+    color: #ff6347;
+    transition: 0.5s ease-in-out;
+}
+.footer_container a:hover{
+    color: #363636;
+}
