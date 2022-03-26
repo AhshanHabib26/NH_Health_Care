@@ -10,6 +10,7 @@ const Products = () => {
     const cartHandeler = (product) =>{
             const newCart = [...cart, product]
             setCart(newCart)
+           
     }
 
     const getRandomProducts = () =>{
@@ -55,7 +56,7 @@ const Products = () => {
                <h2>Your Selected Items</h2>
               {  
                  cart.map((item) =>   (
-                    <div className="product_cart">
+                    <div key={item.id} className="product_cart">
                         <div>
                         <img src={item.img} alt="" />
                         </div>
@@ -77,9 +78,6 @@ const Products = () => {
                         </div>
                     </div>
                </div>
-
-
-
            </div>
            </div>
         </div>
